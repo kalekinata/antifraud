@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" href="/static/images/logo.png"/>
+    <link rel="stylesheet" href="/static/styles/style.css" />
+</head>
+<body>
+<div class="container">
+    <h1>Перевод денежных средст</h1>
+    <form action="/transfer" method="post">
+        <input type="text" name="surname" placeholder="Введите фамилию отправитела" class="form-control"><br>
+        <input type="text" name="name" placeholder="Введите имя отправитела" class="form-control"><br>
+        <input type="text" name="patronymic" placeholder="Введите отчество отправитела" class="form-control"><br>
+        <input type="text" name="acc" placeholder="Номер счёта отправитела" class="form-control"><br>
+        <input type="text" name="region" placeholder="Введите регион" class="form-control"><br>
+        <input type="text" name="surnameR" placeholder="Введите фамилию получателя" class="form-control"><br>
+        <input type="text" name="nameR" placeholder="Введите имя получателя" class="form-control"><br>
+        <input type="text" name="patronymicR" placeholder="Введите отчество получателя" class="form-control"><br>
+        <input type="text" name="accR" placeholder="Номер счёта получателя" class="form-control"><br>
+        <input type="text" name="sum" placeholder="Введите сумму перевода" class="form-control"><br>
+
+        <button type="submit" class="btn">Ввести данные о получателе</button>
+
+    </form>
+</div>
+</body>
+</html>
